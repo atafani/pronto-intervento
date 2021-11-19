@@ -1,14 +1,14 @@
 import React, { useState } from "react";
-import Logo from "../../assets/LOGOPRONTO24RETINA-2.png";
-import { eInputType } from "../../components/enums/eInputType";
-import { eSize } from "../../components/enums/eSize";
-import { eType } from "../../components/enums/eType";
-import PIButton from "../../components/pi-button/PIButton";
-import PICheckbox from "../../components/pi-checkbox/PICheckbox";
-import PIInput from "../../components/pi-input/PIInput";
-import PILabel from "../../components/pi-label/PILabel";
-import PILink from "../../components/pi-link/PILink";
-import Footer from "../../components/pi-footer/PIFooter";
+import Logo from "../../../pronto/assets/LOGOPRONTO24RETINA-2.png";
+import { eInputType } from "../../../pronto/components/enums/eInputType";
+import { eSize } from "../../../pronto/components/enums/eSize";
+import { eType } from "../../../pronto/components/enums/eType";
+import PIButton from "../../../pronto/components/pi-button/PIButton";
+import PICheckbox from "../../../pronto/components/pi-checkbox/PICheckbox";
+import PIInput from "../../../pronto/components/pi-input/PIInput";
+import PILabel from "../../../pronto/components/pi-label/PILabel";
+import PILink from "../../../pronto/components/pi-link/PILink";
+import Footer from "../../../pronto/components/pi-footer/PIFooter";
 import { faEye, faEyeSlash } from "@fortawesome/free-solid-svg-icons";
 import "./LoginPage.scss";
 

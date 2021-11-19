@@ -1,14 +1,13 @@
 import React, { useState } from "react";
-import PIButton from "./components/pi-button/PIButton";
-import PIInput from "./components/pi-input/PIInput";
-import PIDropdown from "./components/pi-dropdown/PIDropdown";
-import PITextarea from "./components/pi-textarea/PITextarea";
-import { eType } from "./components/enums/eType";
-import { eSize } from "./components/enums/eSize";
-import { eInputType } from "./components/enums/eInputType";
-import IDropdownOptions from "./components/interfaces/IDropdownOptions";
-import PINavbar from "./components/pi-navbar/PINavbar";
-import Footer from "./components/pi-footer/PIFooter";
+import PIButton from "../../../pronto/components/pi-button/PIButton";
+import PIInput from "../../../pronto/components/pi-input/PIInput";
+import PITextarea from "../../../pronto/components/pi-textarea/PITextarea";
+import { eType } from "../../../pronto/components/enums/eType";
+import { eSize } from "../../../pronto/components/enums/eSize";
+import { eInputType } from "../../../pronto/components/enums/eInputType";
+import IDropdownOptions from "../../../pronto/components/interfaces/IDropdownOptions";
+import PINavbar from "../../../pronto/components/pi-navbar/PINavbar";
+import Footer from "../../../pronto/components/pi-footer/PIFooter";
 
 const OPTIONS: IDropdownOptions[] = [
   {
@@ -29,7 +28,7 @@ const OPTIONS: IDropdownOptions[] = [
   },
 ];
 
-const Testcomponents = () => {
+const TestPage = () => {
   const [name, setName] = useState("");
   const [message, setMessage] = useState("");
 
@@ -79,4 +78,4 @@ const Testcomponents = () => {
   );
 };
 
-export default Testcomponents;
+export default TestPage;
