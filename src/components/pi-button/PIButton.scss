@@ -1,0 +1,48 @@
+@import "../../assets/globals/variables.scss";
+// PI Buttons
+.pi-btn {
+  border: 0;
+  border-radius: 5px;
+  color: $white;
+  display: block;
+  margin: 0 auto;
+  &.pi-btn:hover {
+    cursor: pointer;
+    transition: background 0.3s ease-in-out;
+  }
+  &.primary {
+    background-color: $primary;
+  }
+  &.primary:hover {
+    background-color: $primary-dark;
+  }
+
+  &.secondary {
+    background-color: $secondary;
+    color: $primary-dark;
+  }
+  &.secondary:hover {
+    background-color: $secondary-light;
+  }
+
+  &.tertiary {
+    background-color: $white;
+    color: $primary-dark;
+  }
+  &.tertiary:hover {
+    background-color: $secondary-light;
+  }
+
+  &.small {
+    padding: 0.6em 2em;
+    font-size: 14px;
+  }
+  &.default {
+    padding: 0.6em 4em;
+    font-size: 15px;
+  }
+  &.large {
+    padding: 0.6em 6em;
+    font-size: 16px;
+  }
+}

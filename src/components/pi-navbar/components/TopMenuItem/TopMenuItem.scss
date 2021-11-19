@@ -1,0 +1,17 @@
+.pi-topmenuitem-container {
+  &:hover {
+    cursor: pointer;
+  }
+  .left {
+    margin-right: auto;
+    margin-left: 2em;
+  }
+  .right {
+    margin-left: auto;
+    margin-right: 2em;
+  }
+
+  .center {
+    justify-self: center;
+  }
+}

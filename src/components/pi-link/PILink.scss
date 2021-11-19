@@ -1,0 +1,9 @@
+@import "../../assets/globals/variables.scss";
+
+.pi-link {
+  transition: color 0.3s ease;
+  &:hover {
+    cursor: pointer;
+    color: #133d67;
+  }
+}

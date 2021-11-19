@@ -1,0 +1,21 @@
+@import "../../assets/globals/variables.scss";
+
+.pi-icon {
+  transition: color 0.2s ease;
+  &.small {
+    width: 9px;
+    height: auto;
+  }
+  &.default {
+    width: 14px;
+    height: auto;
+  }
+  &.large {
+    width: 20px;
+    height: auto;
+  }
+
+  &:hover {
+    cursor: pointer;
+  }
+}

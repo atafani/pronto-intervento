@@ -1,0 +1,15 @@
+.pi-leftmenuitem-container {
+  width: 100%;
+  text-align: center;
+  padding: 2em 0;
+  border-bottom: 0.3px solid #d9d9d9;
+  transition: background 0.3s ease, color 0.3s ease;
+  &:hover {
+    cursor: pointer;
+    background-color: #e2f1ff;
+    color: #133d67;
+  }
+  &:last-of-type {
+    border: 0;
+  }
+}

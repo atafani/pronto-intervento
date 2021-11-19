@@ -1,0 +1,51 @@
+@import "../../assets/globals/variables.scss";
+
+.pi-input-container {
+  width: 100%;
+  outline: 0px solid $secondary-dark;
+  border: 0.5px solid $secondary;
+  border-radius: 3px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  transition: outline 0.3s ease-in-out;
+  &.focused {
+    outline: 2px solid $secondary-dark;
+  }
+  &.none {
+    border: 0;
+  }
+}
+.pi-input {
+  width: 100%;
+  border-radius: 5px;
+  text-overflow: ellipsis;
+  color: $dark;
+  border: 0;
+  outline: 0;
+  &.small {
+    padding: $base-unit;
+    font-size: $secondary-size;
+  }
+  &.default {
+    padding: $base-unit calc(#{$base-unit}* 2);
+    font-size: $primary-size;
+  }
+  &.large {
+    padding: calc(#{$base-unit}* 2) calc(#{$base-unit}* 3);
+    font-size: $tertiary-size;
+  }
+  &:active {
+    background-color: $white;
+  }
+  &[readonly] {
+    cursor: pointer;
+  }
+}
+.pi-input-icon {
+  color: $secondary-dark;
+  margin: 0 $base-unit;
+}
+.pi-input-icon:hover {
+  color: $primary-light;
+}

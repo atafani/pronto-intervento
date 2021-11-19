@@ -1,0 +1,27 @@
+@import "../../assets/globals/variables.scss";
+
+.pi-textarea {
+  width: 100%;
+  resize: none;
+  text-overflow: ellipsis;
+  border: 0.5px solid $secondary;
+  border-radius: 3px;
+  outline: 0px solid $secondary-dark;
+  padding: 0.5em;
+  transition: outline 0.2s ease-in-out;
+  &:focus {
+    outline: 2px solid $secondary-dark;
+  }
+  &.small {
+    padding: 0.4em;
+    font-size: $secondary-size;
+  }
+  &.default {
+    padding: 0.6em;
+    font-size: $primary-size;
+  }
+  &.large {
+    padding: 1em;
+    font-size: $tertiary-size;
+  }
+}

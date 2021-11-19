@@ -1,0 +1,85 @@
+@import "../../assets/globals/variables.scss";
+
+.pi-navbar-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  .pi-navbar-left {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 60px;
+    height: 100vh;
+    background-color: #133d67;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 8em;
+    color: #fff;
+    z-index: 99;
+    .pi-navbar-controllers {
+      position: absolute;
+      top: 1em;
+      left: -100%;
+      transition: left 0.3s ease, visibility 0.2s ease;
+      .pi-navbar-controller {
+        visibility: hidden;
+      }
+    }
+  }
+  .pi-navbar-top {
+    position: absolute;
+    top: 0;
+    left: 60px;
+    right: 0;
+    height: 60px;
+    width: calc(100vw - 60px);
+    background-color: $white;
+    padding: 0 3em;
+    box-shadow: 0 1px 2px #e2f1ff;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    gap: 2em;
+    z-index: 99;
+    transition: right 0.3s ease;
+    div {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      gap: 2em;
+      color: #133d67;
+    }
+  }
+}
+
+@media screen and (max-width: $md) {
+  .pi-navbar-container {
+    .pi-navbar-left {
+      .pi-navbar-controllers {
+        left: 30%;
+        .pi-navbar-controller {
+          visibility: visible;
+        }
+      }
+    }
+    .pi-navbar-top {
+      top: -100%;
+      visibility: hidden;
+      &.collapsed {
+        visibility: visible;
+        top: 0;
+        height: 100vh;
+        background-color: #fff;
+        flex-direction: column;
+        justify-content: start;
+        align-items: center;
+        padding-top: 5em;
+        div {
+          flex-direction: column;
+        }
+      }
+    }
+  }
+}

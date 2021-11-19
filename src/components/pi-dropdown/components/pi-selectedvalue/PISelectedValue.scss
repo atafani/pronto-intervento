@@ -1,0 +1,23 @@
+@import "../../../../assets/globals/variables.scss";
+
+.pi-selected-value {
+  background-color: $secondary-light;
+  width: fit-content;
+  padding: 3px 7px;
+  border-radius: 10px;
+  color: $primary-light;
+  display: flex;
+  align-items: center;
+  transition: background 0.3s ease-in;
+  margin: 0 0.2em;
+  white-space: nowrap;
+  font-size: 15px;
+  overflow-x: hidden;
+  .pi-selected-icon {
+    margin-right: 7px;
+    color: $secondary-dark;
+  }
+  .pi-selected-icon:hover {
+    color: $primary;
+  }
+}

@@ -1,0 +1,40 @@
+@import "../../assets/globals/variables.scss";
+
+.pi-checkbox-container {
+  width: fit-content;
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  :hover {
+    cursor: pointer;
+  }
+  .pi-checkbox {
+    visibility: hidden;
+    &:checked ~ .pi-custom-checkbox {
+      background-color: $primary-light;
+      color: $white;
+    }
+  }
+  .pi-custom-checkbox {
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: 3px;
+    border: 1px solid $primary-light;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    &.small {
+      width: 13px;
+      height: 13px;
+    }
+    &.default {
+      width: 14px;
+      height: 14px;
+    }
+    &.large {
+      width: 15px;
+      height: 15px;
+    }
+  }
+}

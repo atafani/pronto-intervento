@@ -1,0 +1,33 @@
+@import "./variables.scss";
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+// Display Flex
+.flex-row {
+  display: flex;
+  flex-direction: row;
+  gap: 1em;
+}
+.flex-column {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+}
+.justify-content-center {
+  justify-content: center;
+}
+
+.justify-content-start {
+  justify-content: start;
+}
+
+.justify-content-end {
+  justify-content: end;
+}
+.align-items-center {
+  align-items: center;
+}

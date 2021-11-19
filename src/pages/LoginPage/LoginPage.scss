@@ -1,0 +1,29 @@
+@import "../../assets/globals/variables.scss";
+.login-page-container {
+  width: 30%;
+  margin: 0 auto;
+  .logo {
+    display: block;
+    margin: 0 auto;
+  }
+  .login-form {
+    margin: 4em 0;
+    & > div {
+      margin: 1em 0;
+    }
+    .login-links {
+      margin-top: 2em;
+    }
+  }
+}
+
+@media screen and (max-width: $md) {
+  .login-page-container {
+    width: 100%;
+  }
+}
+@media screen and (max-width: $lg) {
+  .login-page-container {
+    width: 70%;
+  }
+}
