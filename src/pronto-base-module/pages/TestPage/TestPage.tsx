@@ -51,6 +51,7 @@ const TestPage = () => {
         value={name}
         size={eSize.Small}
         onInput={(e: any) => setName(e.target.value)}
+        focusable={true}
       />
       <br />
       <br />

@@ -1,9 +1,11 @@
 @import "../../assets/globals/variables.scss";
 
 .pi-link {
+  text-decoration: none;
   transition: color 0.3s ease;
+  color: $dark;
   &:hover {
     cursor: pointer;
-    color: #133d67;
+    color: $color1;
   }
 }

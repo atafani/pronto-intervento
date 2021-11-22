@@ -15,7 +15,7 @@ interface PIInputProps {
   maxRange?: number;
   icon?: any;
   readonly?: boolean;
-  focusable?: boolean;
+  focusable: boolean;
   autocomplete?: boolean;
   border?: boolean;
   onInput?: (e: React.FormEvent<HTMLInputElement>) => void;
@@ -43,6 +43,10 @@ const PIInput: React.FC<PIInputProps> = (props: PIInputProps) => {
   } = props;
   const defaultSize = PropertyManager.getValueOrDefault(size, eSize.Default);
   const defaultBorder = PropertyManager.getValueOrDefault(border, true);
+  const defaultAutocomplete = PropertyManager.getValueOrDefault(
+    autocomplete,
+    false
+  );
   const [isFocused, setIsFocused] = useState(false);
   return (
     <div
@@ -59,7 +63,7 @@ const PIInput: React.FC<PIInputProps> = (props: PIInputProps) => {
         min={minRange}
         max={maxRange}
         readOnly={readonly}
-        autoComplete={autocomplete ? "on" : "off"}
+        autoComplete={defaultAutocomplete ? "on" : "off"}
         onInput={onInput}
         onFocus={() => focusable && setIsFocused(true)}
         onBlur={() => setIsFocused(false)}
@@ -73,7 +77,7 @@ const PIInput: React.FC<PIInputProps> = (props: PIInputProps) => {
           onClick={onIconClick}
           icon={icon}
           className="pi-input-icon"
-          size={size}
+          size={defaultSize}
         />
       )}
     </div>

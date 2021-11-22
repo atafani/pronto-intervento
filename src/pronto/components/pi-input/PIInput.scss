@@ -2,15 +2,17 @@
 
 .pi-input-container {
   width: 100%;
-  outline: 0px solid $secondary-dark;
-  border: 0.5px solid $secondary;
+  outline: 0px solid $color6;
+  border-bottom: 0.5px solid $color4;
   border-radius: 3px;
   display: flex;
   flex-direction: row;
   align-items: center;
   transition: outline 0.3s ease-in-out;
+  margin-top: 0.5em;
   &.focused {
-    outline: 2px solid $secondary-dark;
+    border: 0;
+    outline: 0.5px solid $color1;
   }
   &.none {
     border: 0;
@@ -18,21 +20,20 @@
 }
 .pi-input {
   width: 100%;
-  border-radius: 5px;
   text-overflow: ellipsis;
   color: $dark;
   border: 0;
   outline: 0;
   &.small {
-    padding: $base-unit;
+    padding: $base-unit 10px;
     font-size: $secondary-size;
   }
   &.default {
-    padding: $base-unit calc(#{$base-unit}* 2);
+    padding: $base-unit 10px;
     font-size: $primary-size;
   }
   &.large {
-    padding: calc(#{$base-unit}* 2) calc(#{$base-unit}* 3);
+    padding: calc(#{$base-unit} * 2) 10px;
     font-size: $tertiary-size;
   }
   &:active {
@@ -43,9 +44,9 @@
   }
 }
 .pi-input-icon {
-  color: $secondary-dark;
+  color: $color7;
   margin: 0 $base-unit;
 }
 .pi-input-icon:hover {
-  color: $primary-light;
+  color: $color5;
 }

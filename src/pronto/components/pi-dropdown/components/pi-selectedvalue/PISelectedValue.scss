@@ -1,11 +1,11 @@
 @import "../../../../assets/globals/variables.scss";
 
 .pi-selected-value {
-  background-color: $secondary-light;
+  background-color: $color5;
   width: fit-content;
   padding: 3px 7px;
   border-radius: 10px;
-  color: $primary-light;
+  color: $color2;
   display: flex;
   align-items: center;
   transition: background 0.3s ease-in;
@@ -15,9 +15,9 @@
   overflow-x: hidden;
   .pi-selected-icon {
     margin-right: 7px;
-    color: $secondary-dark;
+    color: $color6;
   }
   .pi-selected-icon:hover {
-    color: $primary;
+    color: $color1;
   }
 }

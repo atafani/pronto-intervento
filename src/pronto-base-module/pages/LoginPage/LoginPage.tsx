@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import Logo from "../../../pronto/assets/LOGOPRONTO24RETINA-2.png";
+import Logo from "../../../pronto/assets/images/logo.svg";
 import { eInputType } from "../../../pronto/components/enums/eInputType";
 import { eSize } from "../../../pronto/components/enums/eSize";
 import { eType } from "../../../pronto/components/enums/eType";
@@ -18,6 +18,7 @@ const LoginPage = () => {
   const [stayConnected, setStayConnected] = useState(false);
   const [isPasswordShown, setIsPasswordShown] = useState(false);
   const [passwordType, setPasswordType] = useState("password");
+  const [errorMessage, setErrorMessage] = useState("");
 
   const handleInput = (e: any) => {
     const value = e.target.value;
@@ -40,7 +41,7 @@ const LoginPage = () => {
   return (
     <div className="login-page-container">
       <img src={Logo} alt="Pronto Intervento Logo" className="logo" />
-      <form className="login-form" onSubmit={() => console.log("submit")}>
+      <form className="login-form " onSubmit={() => console.log("submit")}>
         <div className="login-form-group">
           <PILabel value="Email o Cellulare" />
           <PIInput
@@ -48,6 +49,7 @@ const LoginPage = () => {
             type={eInputType.Text}
             value={email}
             onInput={(e) => handleInput(e)}
+            focusable={true}
           />
         </div>
 
@@ -64,6 +66,7 @@ const LoginPage = () => {
             onInput={(e) => handleInput(e)}
             icon={isPasswordShown ? faEyeSlash : faEye}
             onIconClick={handleShowPassword}
+            focusable={true}
           />
         </div>
 
@@ -81,7 +84,7 @@ const LoginPage = () => {
           name="login"
           type={eType.Primary}
           label="Log In"
-          size={eSize.Large}
+          size={eSize.Default}
           onClick={() => console.log("dd")}
         />
 

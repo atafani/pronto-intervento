@@ -1,29 +1,56 @@
 @import "../../../pronto/assets/globals/variables.scss";
+
 .login-page-container {
-  width: 30%;
-  margin: 0 auto;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  gap: 2em;
+  padding-top: 3em;
   .logo {
-    display: block;
-    margin: 0 auto;
+    height: 90px;
   }
   .login-form {
-    margin: 4em 0;
-    & > div {
-      margin: 1em 0;
-    }
-    .login-links {
-      margin-top: 2em;
+    width: 80%;
+    border-radius: 10px;
+    .login-form-group {
+      margin: 1.5em 0;
     }
   }
 }
 
-@media screen and (max-width: $md) {
+@media screen and (min-width: $sm) {
   .login-page-container {
-    width: 100%;
+    .login-form {
+      width: 55%;
+    }
   }
 }
-@media screen and (max-width: $lg) {
+@media screen and (min-width: $md) {
   .login-page-container {
-    width: 70%;
+    padding-top: 5em;
+    .logo {
+      height: auto;
+    }
+    .login-form {
+      width: 40%;
+    }
+  }
+}
+@media screen and (min-width: $lg) {
+  .login-page-container {
+    .login-form {
+      width: 30%;
+    }
+  }
+}
+
+@media screen and (min-width: $xl) {
+  .login-page-container {
+    .login-form {
+      width: 23%;
+    }
   }
 }

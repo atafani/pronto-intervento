@@ -1,22 +1,29 @@
+@import "../../assets/globals/variables.scss";
+
 .pi-footer-container {
-  position: absolute;
-  bottom: 0;
-  right: 0;
-  left: 0;
   width: 100vw;
   text-align: center;
-  background-color: #133d67;
-  color: #fff;
+  color: $color5;
   padding: 3em 0;
-  font-size: 0.8em;
-  .pi-footer-links {
+  font-size: $secondary-size;
+  ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    li {
+      margin: 0.5em 0;
+    }
+  }
+}
+
+@media screen and (min-width: $md) {
+  .pi-footer-container {
     ul {
-      list-style: none;
-      display: flex;
       flex-direction: row;
-      justify-content: center;
-      flex-wrap: wrap;
-      gap: 1em;
+      li {
+        margin: 0 1em;
+      }
     }
   }
 }

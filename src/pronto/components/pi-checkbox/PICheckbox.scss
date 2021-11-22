@@ -11,7 +11,7 @@
   .pi-checkbox {
     visibility: hidden;
     &:checked ~ .pi-custom-checkbox {
-      background-color: $primary-light;
+      background-color: $color1;
       color: $white;
     }
   }
@@ -20,7 +20,7 @@
     top: 0;
     left: 0;
     border-radius: 3px;
-    border: 1px solid $primary-light;
+    border: 1px solid $color1;
     display: flex;
     justify-content: center;
     align-items: center;
